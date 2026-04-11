@@ -16,7 +16,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: betting-api
-          image: ghcr.io/thranox/betting-api:a323f0495fcf7db482554b7a4fa633ecfebe103e
+          image: ghcr.io/thranox/betting-api:106efb260704e68e72dae7c03ddc8dfab1c715e1
           ports:
             - containerPort: 8000
           resources:

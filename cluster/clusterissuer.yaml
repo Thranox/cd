@@ -16,4 +16,4 @@ spec:
               metadata:
                 annotations:
                   nginx.ingress.kubernetes.io/ssl-redirect: "false"
-
+                  acme.cert-manager.io/http01-ingress-path-type: Prefix

@@ -3,9 +3,13 @@ kind: Ingress
 metadata:
   name: betting-api
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - thranox.com
+      secretName: api-tls
   rules:
     - host: thranox.com
       http:

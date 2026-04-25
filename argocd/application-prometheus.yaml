@@ -11,7 +11,13 @@ spec:
     targetRevision: "70.4.2"
     helm:
       values: |
+        prometheus:
+          prometheusSpec:
+            nodeSelector:
+              kubernetes.io/hostname: ubuntu-4gb-nbg1-2
         grafana:
+          nodeSelector:
+            kubernetes.io/hostname: ubuntu-4gb-nbg1-2
           ingress:
             enabled: true
             ingressClassName: nginx

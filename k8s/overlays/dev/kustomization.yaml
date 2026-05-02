@@ -1,6 +1,7 @@
 namespace: betting-dev
 resources:
   - ../../base
+  - sealed-ghcr-secret.yaml
 patches:
   - patch: |-
       - op: replace

@@ -7,4 +7,4 @@ spec:
     spec:
       containers:
         - name: betting-api
-          image: ghcr.io/thranox/betting-api:8d40a756e48561a3551e0d7638a279bf0eb9d65f
+          image: ghcr.io/thranox/betting-api:98f2cd9598cbf325d96953b3326b55f2cf5695d9

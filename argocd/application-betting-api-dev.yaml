@@ -1,20 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: betting-api-prod
+  name: betting-api-dev
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/Thranox/cd
     targetRevision: HEAD
-    path: k8s/overlays/prod
+    path: k8s/overlays/dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: betting-prod
+    namespace: betting-dev
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+

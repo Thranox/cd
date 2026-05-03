@@ -1,3 +1,9 @@
 namespace: betting-prod
 resources:
   - ../../base
+  - sealed-ghcr-secret.yaml
+patches:
+  - path: deployment.yaml
+    target:
+      kind: Deployment
+      name: betting-api

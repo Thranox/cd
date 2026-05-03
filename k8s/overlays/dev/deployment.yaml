@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: betting-api
+spec:
+  template:
+    spec:
+      containers:
+        - name: betting-api
+          image: ghcr.io/thranox/betting-api:dev
